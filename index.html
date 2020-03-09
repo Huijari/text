@@ -1,26 +1,29 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-  @font-face{
+  @font-face {
     font-family: 'Fira Code';
     src: url('firacode.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
   }
   body {
-    margin: 0;
+    margin: 16px;
   }
   textarea {
     border: none;
-    color: #444;
+    border-radius: 4px;
+    color: #222;
     display: block;
     font-family: 'Fira Code';
     font-size: 16px;
-    height: 100vh;
+    height: calc(100vh - 32px);
     margin: 0 auto;
-    max-width: 48em;
-    outline: none;
+    max-width: 80ch;
     padding: 32px;
     width: 100vw;
   }
+  textarea:focus {
+    outline: 1px solid pink;
+  }
 </style>
-<textarea spellcheck="false" placeholder="..."></textarea>
+<textarea spellcheck="false" autofocus></textarea>
